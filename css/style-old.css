@@ -14,7 +14,7 @@ body{
   margin: 0;
   padding: 0;
   font-family: 'Russo One', sans-serif;
-  color: rgb(139, 33, 104);
+  color: #751b57;
   height: 100vh;
   background-color: var(--bg-color);
 }
@@ -47,10 +47,22 @@ p {
   padding: 16px;
 }
 
-h1, h2, h3,h4 {
+.titulo a{
+  text-decoration: none;
+  color: #751b57;
+}
+
+.tituloContacto{
+  padding: 60px 0;
+}
+
+h1, h2, h3, h4{
   margin: 0;
-  /* padding: 16px; */
   text-align: center;
+}
+
+h4{
+  padding: 16px;
 }
 
 a {
@@ -61,6 +73,7 @@ a {
 footer > nav {
   background-color: #ccc;
 }
+
 nav {
   background: #c0b9b9;
   display: flex;
@@ -100,14 +113,6 @@ nav ul li a:hover, nav>a:hover{
 }
 
 /* Estilo al boton*/
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #c0b9b9;
-  
-}
 
 .btn {
   font-family: 'Russo One', sans-serif;
@@ -203,9 +208,7 @@ body>section>h1{
 
 
 form{
-    align-items: center;
-    width: 50%;
-    margin: 100px;
+  width: 510px;
 }
 
 
@@ -234,7 +237,7 @@ form{
     display: inline-block;
     padding:10px 50px;
     text-align: center;
-  }
+}
   
 
 
@@ -321,16 +324,16 @@ cursor: pointer;
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-background-color: #45a049;
+background-color: #a07545;
 }
 
 /* Add a background color and some padding around the form */
 .container {
-border-radius: 5px;
-background-color: #f2f2f2;
-padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 60px 0;
 }
-
 /* Responsiveness */
 @media only screen and (min-width: 768px) {
   main {
