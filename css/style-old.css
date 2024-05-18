@@ -1,0 +1,350 @@
+/*son variables pueden tener cualquier nombre*/
+:root {
+  --header-color: #c49494;
+  --bg-color: #b9acac;
+  --primary-color:#d1d1cf;
+  --secondary-color:rgb(7, 7, 97);
+  --third-color: rgb(201, 252, 201);
+  --trid-bis-color: rgb(247, 247, 227);
+  --bg-input-color:rgb(124, 124, 124);
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Russo One', sans-serif;
+  color: rgb(139, 33, 104);
+  height: 100vh;
+  background-color: var(--bg-color);
+}
+
+header {
+background-color: #d1d1cf;
+/* padding: 2vh 0; */
+}
+
+
+/* div { /* apunta a todos los <div> y todos los <p> */
+  /*width: 90%; /* van a tener el 90% en base al tamaño seteado para su padre */
+  /* width: 100%; van a tener el 90% en base al tamaño seteado para su padre */
+  /* height: 100%; */
+  /* justify-content: center;
+
+}*/
+
+
+
+p {
+  /* width: 90%; */
+  margin: 0;
+  height: 90%;
+  text-align: center;
+  padding: 20px 2%;
+}
+
+.titulo{
+  padding: 16px;
+}
+
+h1, h2, h3,h4 {
+  margin: 0;
+  /* padding: 16px; */
+  text-align: center;
+}
+
+a {
+  font-family: 'Russo One', sans-serif;
+  color: rgb(2, 5, 94) ;
+}
+
+footer > nav {
+  background-color: #ccc;
+}
+nav {
+  background: #c0b9b9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li:first-child {
+  margin-left: 5; /* quita el margen izq del 1 elm de lista */
+}
+
+nav ul li:last-child {
+  margin-right: lvw;/*de acuerdo a margen horizontal*/
+}
+
+nav ul li a, nav>a {
+  display: block; /*elementos d lista como bloques*/
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover, nav>a:hover{
+  background-color: var(--primary-color);
+}
+
+/* Estilo al boton*/
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c0b9b9;
+  
+}
+
+.btn {
+  font-family: 'Russo One', sans-serif;
+  padding: 20px 40px;
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 1px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+
+}
+
+.btn:hover{
+  background-color: var(--bg-input-color);
+}
+
+@keyframes pulse {
+  0%{ transform:scale(1)}
+  50%{transform: scale(1.1);}
+  100%{transform: scale(1);}
+}
+
+.btn:hover
+{
+  animation: pulse 0.5s infinite alternate;
+}
+
+
+
+
+footer > a {
+    font-family: Impact, sans-serif;
+    color: rgb(139, 33, 104);
+    text-align: center;
+}
+
+
+
+#intro {
+  background-image: url(../img/sistemb.jpg);
+  background-attachment: fixed;
+  /*background-repeat: none;
+  background-position-y: -100px;
+  box-shadow: inset 0 0 50px #000;*/
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 2pc;
+}
+
+#intro h1 {
+  text-shadow: 0 0 10px #000;
+  font-family: 'Anton', sans-serif;
+  /* font-size: 60px; */
+  color:rgb(255, 255, 255);
+}
+
+section {
+  text-align: center;
+  padding: 60px 10%;
+  /* margin: 5pc; */
+  font-size: 17px;
+}
+
+.btn2 {
+    
+  padding: 10 px 20px;
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+
+}
+body>section>h1{
+  color:rgb(238, 137, 204);
+  font-family: 'Russo One', sans-serif;
+  font-size: 55px;
+}
+
+.level {
+  /* margin: 20px auto; */
+}
+
+
+
+.level img {
+  display: block;
+  width: 500px;
+  border: 5px double #af2f9a;
+  margin: auto;
+}
+
+
+form{
+    align-items: center;
+    width: 50%;
+    margin: 100px;
+}
+
+
+#padreDePadres{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#padreDePadres div:first-child,
+#padreDePadres div:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hijo{
+    width: 100%;
+   
+    
+}
+
+.bloque {
+    display: inline-block;
+    padding:10px 50px;
+    text-align: center;
+  }
+  
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: rgb(139, 33, 104);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Russo One', sans-serif;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: blue;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: blue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: max-content;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+	width: 100%; /* Full width */
+	padding: 12px; /* Some padding */ 
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=email], select, textarea {
+width: 100%; /* Full width */
+padding: 12px; /* Some padding */ 
+border: 1px solid #ccc; /* Gray border */
+border-radius: 4px; /* Rounded borders */
+box-sizing: border-box; /* Make sure that padding and width stays in place */
+margin-top: 6px; /* Add a top margin */
+margin-bottom: 16px; /* Bottom margin */
+resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+background-color: rgb(139, 33, 104);
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 20px;
+}
+
+/* Responsiveness */
+@media only screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  /* section {
+    width: 30%;
+  } */
+}
+
+
+
+
+
