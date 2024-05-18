@@ -335,17 +335,28 @@ background-color: #a07545;
   padding: 0 0 60px 0;
 }
 /* Responsiveness */
+
+.column {
+  width: 100%;
+}
 @media only screen and (min-width: 768px) {
   main {
     flex-direction: row;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
     align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
+  .column {
+    width: 50%;
+  }
+}
   
   /* section {
     width: 30%;
   } */
-}
+
 
 
 
