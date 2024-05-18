@@ -1,0 +1,31 @@
+:root {
+    /*general*/
+    --primary-background: #F3E8D8;
+    --secondary-background: #5E6D55;
+    --separators: #000000;
+    /*texts*/
+    --title: #000000;
+    --subtitle:  #000000;
+    --body-text: #F3E8D8;
+    --secondary-text: #3D3A36;
+    --action-links: #000000;
+    /*buttons*/
+    --fill-btn: #000000;
+    --border-btn: #000000;
+    --text-btn: #F3E8D8;
+}
+
+html{
+    background-color: var(--secondary-background);
+    font-family: 'Russo One', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    /* height: 100vh; */
+}
+
+#titulo{
+    
+}
