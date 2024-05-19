@@ -1,78 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>SeriesFlix Reviews</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1"/>
-        <link rel="icon" href="favicon.ico">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,400&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style-old.css">
-    </head>
-    <body>
-   
-        <header>
-            <nav class="navegador">
-                <div class="titulo">
-                    <a href="index.html"><h1>Series de siempre</h1></a>
-                </div>
-                <div>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="series.html">Series</a></li>
-                        <li><a href="Contacto.html">Contacto</a></li>
-                        <li><a href="#">Nosotros</a></li>
-                    </ul>
-                </div>
-                
-            </nav>
-        </header>
- 
+  <head>
+    <meta charset="UTF-8">
+    <title>SeriesFlix Reviews</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style-old.css">
+    <link rel="stylesheet" href="css/menu.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav class="navegador">
+          <div class="titulo">
+            <a href="index.html"><h2>Series de siempre</h2></a>
+          </div>
+          <nav class="navbar">
+            <div class="menu-toggle" id="mobile-menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="series.html">Series</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <li><a href="Nosotros.html">Nosotros</a></li>
+            </ul>
+          </nav>
+          <script src="script/scriptMenu.js"></script>
+        </nav>
+      </header>
+      <div class="contenedor">
         <section id="intro">
-            <h1>Nuestras series favoritas</h1>
+          <h1>Nuestras series favoritas</h1>
         </section>
 
-        <nav>
-            <section>
-                <h2>Pagina dedicada a contar cosas de nuestras series favoritas</h2>
-                <p>¿Queres saber de que se trata? ¿Te nombraron una serie y no te convence?</p>
-                <p>Te ayudamos a decidir si maratoneas o no! Si no encontras la serie que buscabas, contactate con nosotros y la buscamos!</p>
-                <p>Luz, cámara, ACCIÓN!!!</p>
-                <button class="btn"><a href="series.html">Saber de series</a></button> 
-                
-            </section>
-        </nav>
-            
-        
-        <footer>
-            
-            <div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Términos y condiciones</a></li>
-                        <li><a href="#">Preguntas frecuentes</a></li>
-                        <li><a href="#">Ayuda</a></li>
-                    </ul>
-                    <a href="index.html">Volver</a>
-                </nav>
-            </div>
+        <div class="content">
+          <section>
+            <h2>Pagina dedicada a contar cosas de nuestras series favoritas</h2>
+            <p>¿Queres saber de que se trata? ¿Te nombraron una serie y no te convence?</p>
+            <p>Te ayudamos a decidir si maratoneas o no! Si no encontras la serie que buscabas, contactate con nosotros y la buscamos!</p>
+            <p>Luz, cámara, ACCIÓN!!!</p>
+            <br>
+            <a class="btn" href="series.html">Saber de series</a>
+          </section>
+        </div>
+      </div>
 
-            <div>
-                <h4>© 2024 CaC Series</h4>
-            </div>
-            
-            <!--
-            <nav>
-                <ul>
-                    <li><a href="#">Términos y condiciones</a></li>
-                    <li><a href="#">Preguntas frecuentes</a></li>
-                    <li><a href="#">Ayuda</a></li>
-                </ul>
-                <ul><a href="index.html">volver</a></ul>
-            </nav>
-            <p>© 2024 CaC Series</p>-->
-        </footer>
-
-    
-    </body>
+      <footer class="footer">
+        <div>
+          <nav>
+            <ul>
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Preguntas frecuentes</a></li>
+              <li><a href="#">Ayuda</a></li>
+            </ul>
+            <a href="index.html">Volver</a>
+          </nav>
+        </div>
+        <div>
+          <h4>© 2024 CaC Series</h4>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

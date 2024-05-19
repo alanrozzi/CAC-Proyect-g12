@@ -1,92 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1"/>
-        <title>SeriesFlix Reviews</title>
-        <link rel="icon" href="https://www.google.com/favicon.ico">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,400&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style-old.css">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SeriesFlix Reviews</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style-old.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
 
-        <header>
-            <nav class="navegador">
-                <div class="titulo">
-                    <a href="index.html"><h1>Series de siempre</h1></a>
+    <header>
+        <nav class="navegador">
+            <div class="titulo">
+                <a href="index.html"><h2>Series de siempre</h2></a>
+            </div>
+            <nav class="navbar">
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
-                <div>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="series.html">Series</a></li>
-                        <li><a href="Contacto.html">Contacto</a></li>
-                        <li><a href="#">Nosotros</a></li>
-                    </ul>
-                </div>
-                
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="series.html">Series</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
+                </ul>
             </nav>
-        </header>
-
-        <main>
-
-            <script src="./script/validaform.js"></script>
+            <script src="script/scriptMenu.js"></script>
             
-            <div>
-                <h1 class="tituloContacto">Contacto</h1>
-            </div>
+        </nav>
+    </header>
 
-            <div class="container">
-                <form name="formulario" id="formulario" onSubmit="return Valida(this);" method="POST" >
+    <main>
 
-                    <div class="form-control">
-                        <label for="fname">Nombre</label>
-                        <input type="text" id="fname" name="nombre" placeholder="Tu nombre..">
-                    </div>
+        <script src="./script/validaform.js"></script>
+        
+        <div>
+            <h1 class="tituloContacto">Contacto</h1>
+        </div>
 
-                    <div class="form-control">
-                        <label for="lname">Apellido</label>
-                        <input type="text" id="lname" name="apellido" placeholder="Tu apellido..">
-                    </div>
+        <div class="container">
+            <form name="formulario" id="formulario" onSubmit="return Valida(this);" method="POST" >
 
-                    <div class="form-control">
-                        <label for="country">Pais</label>
-                        <input type="text" id="country" name="pais" placeholder="Donde vives..">
-                    </div>
+                <div class="form-control">
+                    <label for="fname">Nombre</label>
+                    <input type="text" id="fname" name="nombre" placeholder="Tu nombre..">
+                </div>
 
-                    <div class="form-control">
-                        <label for="mail">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Correo electronico">    
-                    </div>
+                <div class="form-control">
+                    <label for="lname">Apellido</label>
+                    <input type="text" id="lname" name="apellido" placeholder="Tu apellido..">
+                </div>
 
-                    <div class="form-control">
-                        <label for="subject">Asunto</label>
-                        <textarea id="subject" name="asunto" placeholder="Su consulta.." style="height:200px"></textarea>
-                    </div>
+                <div class="form-control">
+                    <label for="country">Pais</label>
+                    <input type="text" id="country" name="pais" placeholder="Donde vives..">
+                </div>
 
-                    <input type="submit" value="Enviar">
-                </form>
-            </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Correo electronico">
+                </div>
 
-        </main>
-     
-        <footer>
-            <div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Términos y condiciones</a></li>
-                        <li><a href="#">Preguntas frecuentes</a></li>
-                        <li><a href="#">Ayuda</a></li>
-                    </ul>
-                    <a href="index.html">Volver</a>
-                </nav>
-            </div>
+                <div class="form-control">
+                    <label for="subject">Asunto</label>
+                    <textarea id="subject" name="asunto" placeholder="Su consulta.." style="height:200px"></textarea>
+                </div>
 
-            <div>
-                <h4>© 2024 CaC Series</h4>
-            </div>
-            
-        </footer>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
 
-    </body>
+    </main>
+ 
+    <footer class="footer">
+        <div>
+          <nav>
+            <ul>
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Preguntas frecuentes</a></li>
+              <li><a href="#">Ayuda</a></li>
+            </ul>
+            <a href="index.html">Volver</a>
+          </nav>
+        </div>
+        <div>
+            <h4>© 2024 CaC Series</h4>
+        </div>
+        
+    </footer>
+
+</body>
 </html>
+

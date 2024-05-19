@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>SeriesFlix Reviews</title>
     <link rel="icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style-old.css">
+    <link rel="stylesheet" href="css/menu.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./script/script.js" defer></script>
-
 </head>
-
 <body>
-    <header>
-        <nav class="navegador">
-            <div class="titulo">
-                <a href="index.html"><h1>Series de siempre</h1></a>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="series.html">Series</a></li>
-                    <li><a href="Contacto.html">Contacto</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                </ul>
-            </div>
-            
-        </nav>
-    </header>
-
+    <div class="wrapper">
+        <header>
+            <nav class="navegador">
+                <div class="titulo">
+                    <a href="index.html"><h2>Series de siempre</h2></a>
+                </div>
+                <nav class="navbar">
+                    <div class="menu-toggle" id="mobile-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="series.html">Series</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="Nosotros.html">Nosotros</a></li>
+                    </ul>
+                </nav>
+                <script src="./script/scriptMenu.js"></script>
+            </nav>
+        </header>
         <main>
-
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Series analizadas</button>
                 <div id="myDropdown" class="dropdown-content">
@@ -45,37 +46,31 @@
                     <a id="boton4" href="#">Breaking Bad</a>
                 </div>
             </div>
-
             <section class="level">
                 <div id="content">
-                    <img id="imag1" src="img/sistemb.jpg" alt="Sistema">
+                    <h2>¿Quieres saber de que se trata? Elige una! </h2>
+                    <br>
+                    <img class="imag1" src="img/sistemb.jpg" alt="Sistema">
                     <p>Conozca nuestras series con una breve descripción de cada una!</p>
                 </div>
             </section>
-
         </main>
-        
-        <footer>
+        <footer class="footer">
             <div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Términos y condiciones</a></li>
-                        <li><a href="#">Preguntas frecuentes</a></li>
-                        <li><a href="#">Ayuda</a></li>
-                    </ul>
-                    <a href="index.html">Volver</a>
-                </nav>
+              <nav>
+                <ul>
+                  <li><a href="#">Términos y condiciones</a></li>
+                  <li><a href="#">Preguntas frecuentes</a></li>
+                  <li><a href="#">Ayuda</a></li>
+                </ul>
+                <a href="index.html">Volver</a>
+              </nav>
             </div>
-
+            
             <div>
                 <h4>© 2024 CaC Series</h4>
             </div>
-            
         </footer>
-
+    </div>
 </body>
-
-
-
-
 </html>
