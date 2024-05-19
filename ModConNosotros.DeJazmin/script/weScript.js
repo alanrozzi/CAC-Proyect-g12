@@ -1,4 +1,4 @@
-$(document).click(function() {
+$(document).ready(function() {
     $('#boton1').click(function(){
         $('#content').html(
             '<div class="content-container">' +
